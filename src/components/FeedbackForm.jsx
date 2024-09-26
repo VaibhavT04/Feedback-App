@@ -14,7 +14,7 @@ function FeedbackForm() {
     const [rating, setRating] = useState(10)
 
     useEffect(() => {
-        if(feedbackEdit.edit == true){
+        if(feedbackEdit.edit === true){
             setBtnDisabled(false)
             setText(feedbackEdit.item.text)
             setRating(feedbackEdit.item.rating)
@@ -48,7 +48,7 @@ function FeedbackForm() {
                 rating
             }
 
-            if(feedbackEdit.edit == true){
+            if(feedbackEdit.edit === true){
                 updateFeedback(feedbackEdit.item.id, newFeedback)
             }
             else{
